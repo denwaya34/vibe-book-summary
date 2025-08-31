@@ -3,43 +3,27 @@
     "Context7": {
       "type": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@upstash/context7-mcp@latest"
-      ],
+      "args": ["-y", "@upstash/context7-mcp@latest"],
       "env": {}
     },
     "playwright": {
       "type": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@playwright/mcp@latest"
-      ]
+      "args": ["-y", "@playwright/mcp@latest"]
     },
     "ESLint": {
       "type": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "@eslint/mcp@latest"
-      ]
+      "args": ["-y", "@eslint/mcp@latest"]
     },
     "motion": {
       "type": "stdio",
       "command": "npx",
-      "args": [
-        "-y",
-        "motion-ai@latest"
-      ]
+      "args": ["-y", "motion-ai@latest"]
     },
     "taskmaster-ai": {
       "command": "npx",
-      "args": [
-        "-y",
-        "--package=task-master-ai",
-        "task-master-ai"
-      ],
+      "args": ["-y", "--package=task-master-ai", "task-master-ai"],
       "env": {}
     },
     "serena": {
