@@ -24,6 +24,8 @@
     ]
   },
   "dependencies": {
-    "motion": "12.23.12"
+    "@tailwindcss/vite": "4.1.12",
+    "motion": "12.23.12",
+    "tailwindcss": "4.1.12"
   }
 }
