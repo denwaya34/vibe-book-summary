@@ -46,7 +46,16 @@
     "codex": {
       "type": "stdio",
       "command": "bunx",
-      "args": ["codex", "mcp"],
+      "args": [
+        "codex",
+        "mcp",
+        "-c",
+        "search=true",
+        "-c",
+        "model='gpt-5'",
+        "-c",
+        "model_reasoning_effort='high'"
+      ],
       "env": {}
     },
     "sequential-thinking": {
