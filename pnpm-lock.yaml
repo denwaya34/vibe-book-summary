@@ -30,6 +30,9 @@ importers:
       lefthook:
         specifier: 1.12.3
         version: 1.12.3
+      stagewise:
+        specifier: 0.8.0
+        version: 0.8.0
       typescript:
         specifier: 5.9.2
         version: 5.9.2
@@ -876,6 +879,10 @@ packages:
 
   stackback@0.0.2:
     resolution: {integrity: sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==}
+
+  stagewise@0.8.0:
+    resolution: {integrity: sha512-1laxFAVJ70MPZLhIWITe5dtDvScbuO+lpgBc3XoqKr2FeOhZnB9RsllZEshvgDOkq++qHr3r7vC9VUm9Ye1zdw==}
+    hasBin: true
 
   std-env@3.9.0:
     resolution: {integrity: sha512-UGvjygr6F6tpH7o2qyqR6QYpwraIjKSdtzyBdyytFOHmPZY917kwdwLG0RbOjWOnKmnm3PeHjaoLLMie7kPLQw==}
@@ -1777,6 +1784,8 @@ snapshots:
   source-map-js@1.2.1: {}
 
   stackback@0.0.2: {}
+
+  stagewise@0.8.0: {}
 
   std-env@3.9.0: {}
 
