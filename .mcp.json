@@ -33,18 +33,14 @@
         "motion-ai@latest"
       ]
     },
-    "brave-search": {
+    "taskmaster-ai": {
       "command": "npx",
       "args": [
         "-y",
-        "@modelcontextprotocol/server-brave-search"
-      ]
-    },
-    "taskmaster-ai": {
-      "command": "npx",
-      "args": ["-y", "--package=task-master-ai", "task-master-ai"],
-      "env": {
-      }
+        "--package=task-master-ai",
+        "task-master-ai"
+      ],
+      "env": {}
     },
     "serena": {
       "type": "stdio",
@@ -57,11 +53,13 @@
         "--context",
         "ide-assistant",
         "--enable-web-dashboard",
-        "false",
-        "--project",
-        "/Users/kitadadaionore/WebstormProjects/next-kitada-team-docs"
+        "false"
       ],
       "env": {}
+    },
+    "vercel": {
+      "type": "http",
+      "url": "https://mcp.vercel.com"
     }
   }
 }
