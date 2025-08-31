@@ -63,8 +63,8 @@
       "args": ["@modelcontextprotocol/server-sequential-thinking"]
     },
     "o3-search": {
-      "command": "node",
-      "args": ["/path/to/o3-search-mcp/build/index.js"],
+      "command": "bunx",
+      "args": ["o3-search-mcp"],
       "env": {
         "OPENAI_MODEL": "gpt-5",
         "SEARCH_CONTEXT_SIZE": "high",
