@@ -51,15 +51,17 @@ npx ultracite lint
 ### Project Structure
 ```
 vibe-book-summary/
-├── src/
-│   ├── main.ts         # Application entry point
-│   ├── style.css       # Global styles with Tailwind
-│   └── vite-env.d.ts   # Vite type definitions
-├── index.html          # HTML entry point
-├── vite.config.ts      # Vite configuration
-├── tsconfig.json       # TypeScript configuration
-├── biome.jsonc         # Extends Ultracite preset
-└── package.json        # Project dependencies and scripts
+├── src/                  # Vite root directory
+│   ├── main/
+│   │   ├── index.html   # HTML entry point
+│   │   └── main.ts      # Application entry point
+│   ├── style.css        # Global styles with Tailwind
+│   └── vite-env.d.ts    # Vite type definitions
+├── vite.config.ts       # Vite configuration (root set to 'src')
+├── tsconfig.json        # TypeScript configuration
+├── biome.jsonc          # Extends Ultracite preset
+├── lefthook.yml         # Pre-commit hooks configuration
+└── package.json         # Project dependencies and scripts
 ```
 
 ## Code Quality Rules
