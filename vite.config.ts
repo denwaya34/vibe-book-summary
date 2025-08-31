@@ -3,6 +3,14 @@ import { defineConfig } from 'vite';
 import checker from 'vite-plugin-checker';
 
 export default defineConfig({
+  root: import.meta.dirname,
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html',
+      },
+    },
+  },
   server: {
     port: 3000,
     strictPort: true,
