@@ -9,7 +9,17 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.2.2",
+    "husky": "9.1.7",
+    "lefthook": "1.12.3",
+    "lint-staged": "16.1.5",
     "typescript": "~5.8.3",
+    "ultracite": "5.2.11",
     "vite": "^7.1.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,jsonc,css,scss,md,mdx}": [
+      "pnpm dlx ultracite format"
+    ]
   }
 }
