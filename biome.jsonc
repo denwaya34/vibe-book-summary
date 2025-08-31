@@ -3,5 +3,12 @@
   "extends": ["ultracite"],
   "formatter": {
     "useEditorconfig": true
+  },
+  "linter": {
+    "rules": {
+      "suspicious": {
+        "noConsole": "off"
+      }
+    }
   }
 }
