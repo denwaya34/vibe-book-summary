@@ -1,19 +1,70 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 # Project Context
 Ultracite enforces strict type safety, accessibility standards, and consistent code quality for JavaScript/TypeScript projects using Biome's lightning-fast formatter and linter.
 
-## Key Principles
-- Zero configuration required
-- Subsecond performance
-- Maximum type safety
-- AI-friendly code generation
+## Project Overview
+This is a Vite-powered TypeScript web application with TailwindCSS styling, using Biome (via Ultracite) for code formatting and linting.
 
-## Before Writing Code
-1. Analyze existing patterns in the codebase
-2. Consider edge cases and error scenarios
-3. Follow the rules below strictly
-4. Validate accessibility requirements
+## Development Commands
 
-## Rules
+```bash
+# Install dependencies (PNPM only - enforced via preinstall hook)
+pnpm install
+
+# Start development server (runs on port 3000)
+pnpm dev
+
+# Start with Stagewise UI tools (runs app on 3000, Stagewise on 3100)
+pnpm dev:sw
+
+# Build for production
+pnpm build
+
+# Preview production build
+pnpm preview
+
+# Format and lint code (automatically runs on pre-commit)
+npx ultracite format
+npx ultracite lint
+```
+
+## Project Architecture
+
+### Technology Stack
+- **Build Tool**: Vite 7.x with TypeScript
+- **Styling**: TailwindCSS 4.x (using @tailwindcss/vite plugin)
+- **Animation**: Motion (Framer Motion) 12.x
+- **Code Quality**: Biome via Ultracite preset
+- **Package Manager**: PNPM (enforced)
+- **Development Tools**: Stagewise for UI development
+
+### Key Configuration
+- **Development Port**: 3000 (strict port enforcement)
+- **TypeScript**: Strict mode enabled with ES2022 target
+- **Module System**: ESNext modules with bundler resolution
+- **Code Style**: 2-space indentation, 120 char line length (via .editorconfig)
+- **Pre-commit**: Auto-formatting via Lefthook for JS/TS/JSON/CSS files
+
+### Project Structure
+```
+vibe-book-summary/
+├── src/
+│   ├── main.ts         # Application entry point
+│   ├── style.css       # Global styles with Tailwind
+│   └── vite-env.d.ts   # Vite type definitions
+├── index.html          # HTML entry point
+├── vite.config.ts      # Vite configuration
+├── tsconfig.json       # TypeScript configuration
+├── biome.jsonc         # Extends Ultracite preset
+└── package.json        # Project dependencies and scripts
+```
+
+## Code Quality Rules
+
+Ultracite enforces strict type safety, accessibility standards, and consistent code quality using Biome's formatter and linter.
 
 ### Accessibility (a11y)
 - Don't use `accessKey` attribute on any HTML element.
@@ -325,3 +376,8 @@ try {
   console.log(e);
 }
 ```
+# important-instruction-reminders
+Do what has been asked; nothing more, nothing less.
+NEVER create files unless they're absolutely necessary for achieving your goal.
+ALWAYS prefer editing an existing file to creating a new one.
+NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
