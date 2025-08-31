@@ -1,6 +1,7 @@
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'vite';
 import checker from 'vite-plugin-checker';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   root: import.meta.dirname,
@@ -17,6 +18,7 @@ export default defineConfig({
   },
   plugins: [
     tailwindcss(),
+    tsconfigPaths(),
     checker({
       typescript: true,
       biome: {
