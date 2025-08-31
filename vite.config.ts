@@ -1,10 +1,11 @@
+import path from 'node:path';
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'vite';
 import checker from 'vite-plugin-checker';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-  root: import.meta.dirname,
+  root: path.join(import.meta.dirname, 'src'),
   build: {
     rollupOptions: {
       input: {
