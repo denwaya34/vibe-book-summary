@@ -1,30 +1,20 @@
 {
   "mcpServers": {
-    "Context7": {
+    "context7": {
       "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp@latest"],
+      "command": "bunx",
+      "args": ["@upstash/context7-mcp@latest"],
       "env": {}
     },
     "playwright": {
       "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@playwright/mcp@latest"]
-    },
-    "ESLint": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "@eslint/mcp@latest"]
+      "command": "bunx",
+      "args": ["@playwright/mcp@latest"]
     },
     "motion": {
       "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "motion-ai@latest"]
-    },
-    "taskmaster-ai": {
-      "command": "npx",
-      "args": ["-y", "--package=task-master-ai", "task-master-ai"],
-      "env": {}
+      "command": "bunx",
+      "args": ["motion-ai@latest"]
     },
     "serena": {
       "type": "stdio",
@@ -44,6 +34,24 @@
     "vercel": {
       "type": "http",
       "url": "https://mcp.vercel.com"
+    },
+    "github": {
+      "command": "bunx",
+      "args": ["@modelcontextprotocol/server-github"]
+    },
+    "ultracite": {
+      "command": "bunx",
+      "args": ["mcp-remote", "https://www.ultracite.ai/api/mcp/mcp"]
+    },
+    "codex": {
+      "type": "stdio",
+      "command": "bunx",
+      "args": ["-y", "codex", "mcp"],
+      "env": {}
+    },
+    "sequential-thinking": {
+      "command": "bunx",
+      "args": ["@modelcontextprotocol/server-sequential-thinking"]
     }
   }
 }
