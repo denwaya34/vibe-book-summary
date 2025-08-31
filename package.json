@@ -14,6 +14,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.2",
+    "@iconify/json": "2.2.380",
+    "@iconify/utils": "3.0.1",
     "daisyui": "5.0.54",
     "lefthook": "1.12.3",
     "npm-run-all": "4.1.5",
