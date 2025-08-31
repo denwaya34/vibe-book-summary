@@ -22,9 +22,6 @@ export default defineConfig({
     tsconfigPaths(),
     checker({
       typescript: true,
-      biome: {
-        command: 'format',
-      },
     }),
   ],
 });
