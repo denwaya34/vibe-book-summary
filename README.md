@@ -1,1 +1,1 @@
-# レポート作成 雛形プロジェクト
+# [レポート作成 雛形プロジェクト](https://github.com/denwaya34/vibe-book-summary)
