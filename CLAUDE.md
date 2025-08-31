@@ -30,6 +30,7 @@ pnpm swb          # Run Stagewise with browser flag
 - **Build**: Vite 7.x with TypeScript (strict mode)
 - **Styling**: TailwindCSS 4.x with plugins:
   - DaisyUI for component classes
+    - Refer https://daisyui.com/llms.txt to develop DaisyUI 
   - @iconify/tailwind4 for icon integration
   - tailwindcss-animated for animations
 - **Animation**: Motion (Framer Motion) 12.x
