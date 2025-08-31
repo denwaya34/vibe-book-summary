@@ -61,7 +61,8 @@ Claude 4.1 Opusの高度な推論能力とcodex mcpの高度な考察力を最�
     - コントラスト（Contrast）: 情報の優先順位の明確化
 
 #### 2.3 実装仕様
-- 技術スタック: Next.js 15.3.3, TypeScript, Tailwind CSS v4, DaisyUI
+- 実装ファイルパス @src/index.html
+- 技術スタック: React 19, TypeScript, Tailwind CSS v4, DaisyUI, Motion
 - レスポンシブ対応（モバイルファースト）
 - アクセシビリティ考慮（WCAG 2.1 AA準拠）
 
@@ -83,7 +84,7 @@ Claude 4.1 Opusの高度な推論能力とcodex mcpの高度な考察力を最�
     - コンポーネントデザインは以下のatlassianデザインシステムを参考にする
       https://atlassian.design/components
 
-#### 2.5 高度なアニメーション実装（Chapter 14参考）
+#### 2.5 高度なアニメーション実装
 - **motion/react活用**:
     - useScroll, useTransform, useSpring, useInViewフックの組み合わせ
     - スクロール連動の背景アニメーション（backgroundY変換）
