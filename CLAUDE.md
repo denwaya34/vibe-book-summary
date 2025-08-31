@@ -2,6 +2,9 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Project Overview
+A Vite-powered React application for book summaries, built with TypeScript and modern web technologies.
+
 ## Essential Commands
 
 ```bash
@@ -50,7 +53,15 @@ pnpm swb          # Run Stagewise with browser flag
   - `noUnusedLocals`: true
   - `noUnusedParameters`: true
   - `noFallthroughCasesInSwitch`: true
+  - `noUncheckedSideEffectImports`: true
+  - `verbatimModuleSyntax`: true (enforces explicit type imports)
+  - `erasableSyntaxOnly`: true
+  - `jsx`: "react-jsx" (React 19 automatic JSX transform)
 - Pre-commit: Auto-formats JS/TS/JSON/CSS via Lefthook
+- Vite Plugins:
+  - `@tailwindcss/vite`: Native TailwindCSS 4 integration
+  - `vite-plugin-checker`: Real-time TypeScript type checking
+  - `vite-tsconfig-paths`: Resolves TypeScript path mappings
 
 ### TailwindCSS 4.x Setup
 ```css
