@@ -2,6 +2,8 @@
 @import "tailwindcss-animated";
 /* biome-ignore lint/suspicious/noUnknownAtRules: for daisy ui */
 @plugin "daisyui";
+/* biome-ignore lint/suspicious/noUnknownAtRules: for iconify */
+@plugin "@iconify/tailwind4";
 
 :root {
   height: 100%;
