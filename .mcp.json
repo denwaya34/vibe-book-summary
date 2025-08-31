@@ -66,11 +66,11 @@
       "command": "bunx",
       "args": ["o3-search-mcp"],
       "env": {
-        "OPENAI_MODEL": "gpt-5",
+        "OPENAI_MODEL": "gpt-5-mini",
         "SEARCH_CONTEXT_SIZE": "medium",
         "REASONING_EFFORT": "medium",
-        "OPENAI_API_TIMEOUT": "300000",
-        "OPENAI_MAX_RETRIES": "3"
+        "OPENAI_API_TIMEOUT": "30000",
+        "OPENAI_MAX_RETRIES": "1"
       }
     }
   }
