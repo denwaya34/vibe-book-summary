@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "run-p dev:vite",
-    "dev:vite": "vite",
+    "dev": "vite",
+    "dev:sw": "run-p dev stagewise",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "stagewise": "stagewise -b"
