@@ -1,6 +1,6 @@
 ---
 argument-hint: [prompt]
-description: LLMのプロンプト エンジニアリング 要約
+description: レポート作成 コマンド
 ---
 
 # 制約事項
