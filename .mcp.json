@@ -46,7 +46,7 @@
     "codex": {
       "type": "stdio",
       "command": "bunx",
-      "args": ["-y", "codex", "mcp"],
+      "args": ["codex", "mcp"],
       "env": {}
     },
     "sequential-thinking": {
