@@ -61,6 +61,17 @@
     "sequential-thinking": {
       "command": "bunx",
       "args": ["@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "o3-search": {
+      "command": "node",
+      "args": ["/path/to/o3-search-mcp/build/index.js"],
+      "env": {
+        "OPENAI_MODEL": "gpt-5",
+        "SEARCH_CONTEXT_SIZE": "high",
+        "REASONING_EFFORT": "high",
+        "OPENAI_API_TIMEOUT": "300000",
+        "OPENAI_MAX_RETRIES": "3"
+      }
     }
   }
 }
