@@ -6,10 +6,11 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "vite",
-    "dev:sw": "run-p dev stagewise",
+    "dev:sw": "run-p dev sw",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "stagewise": "stagewise -b"
+    "sw": "stagewise",
+    "swb": "stagewise -b"
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.2",
