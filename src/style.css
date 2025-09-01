@@ -8,3 +8,52 @@
 :root {
   height: 100%;
 }
+
+/* タブの視認性向上 */
+.tab {
+  transition: all 0.3s ease;
+  font-weight: 500;
+  position: relative;
+  color: hsl(var(--bc) / 0.7);
+}
+
+.tab:hover {
+  background-color: hsl(var(--p) / 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px hsl(var(--p) / 0.2);
+  color: hsl(var(--bc) / 0.9);
+}
+
+.tab-active {
+  background-color: hsl(var(--p));
+  color: hsl(220 20% 20%);
+  font-weight: 600;
+  box-shadow: 0 6px 20px hsl(var(--p) / 0.4);
+  transform: translateY(-1px);
+}
+
+.tab-active::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, hsl(220 20% 20%), transparent);
+  border-radius: 2px;
+}
+
+/* ダークモードでの調整 */
+[data-theme="dark"] .tab {
+  color: hsl(var(--bc) / 0.6);
+}
+
+[data-theme="dark"] .tab:hover {
+  background-color: hsl(var(--p) / 0.15);
+  color: hsl(var(--bc) / 0.9);
+}
+
+[data-theme="dark"] .tab-active {
+  box-shadow: 0 6px 20px hsl(var(--p) / 0.6);
+}
