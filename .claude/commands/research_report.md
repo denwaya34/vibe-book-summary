@@ -94,7 +94,7 @@ Claude 4.1 Opusの高度な推論能力とcodex mcpの高度な考察力を最�
     - RTL（右から左）レイアウト対応
 
 #### 2.3 実装仕様
-- 実装ファイルパス @src/index.html
+- 実装ファイルパス @src/main/app.tsx
 - 技術スタック: React 19, TypeScript, Tailwind CSS v4, DaisyUI, Motion
 - レスポンシブ対応（モバイルファースト）
 - アクセシビリティ考慮（WCAG 2.1 AA準拠）
