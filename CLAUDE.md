@@ -3,7 +3,7 @@
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Project Overview
-A Vite-powered React application for book summaries, built with TypeScript and modern web technologies.
+A Vite-powered React application for book summaries, built with TypeScript and modern web technologies. The project enforces strict code quality through Ultracite (Biome) with 250+ accessibility and quality rules.
 
 ## Essential Commands
 
@@ -109,6 +109,20 @@ vibe-book-summary/
 - Icons from Lucide React (`lucide-react` package)
 - Data visualization with Recharts components
 
+## Code Quality Standards
+
+The project uses Ultracite (Biome) to enforce:
+- **Accessibility**: Comprehensive a11y rules for inclusive development
+- **Type Safety**: Strict TypeScript with no implicit any, proper type imports
+- **React Best Practices**: Proper hooks usage, key props, component patterns
+- **Performance**: Prefer efficient methods (for...of, flatMap, optional chaining)
+- **Security**: No hardcoded secrets, proper error handling, safe navigation
+
+Key overrides:
+- Console.log is allowed (configured in biome.jsonc)
+- 2-space indentation enforced via .editorconfig
+- 120 character line width limit
+
 ## Common Gotchas
 
 - **Path Resolution**: Vite root is `src/`, not project root - all paths resolve from `src/`
@@ -116,6 +130,16 @@ vibe-book-summary/
 - **Port Conflicts**: Port 3000 is strict - process fails if occupied
 - **Package Manager**: Only PNPM works (preinstall hook enforces)
 - **TailwindCSS 4.x**: Uses native CSS imports with @plugin directives, not PostCSS
-- **Biome Overrides**: Console.log is allowed (configured in biome.jsonc)
-- **Code Style**: 2-space indentation, 120 char line width (enforced via .editorconfig)
 - **TypeScript Configs**: Uses project references with separate app and node configs
+- **No Tests**: Project currently has no test setup configured
+
+## Working with the Codebase
+
+When implementing features:
+1. Check existing patterns before adding new dependencies
+2. Follow the established component structure under `src/`
+3. Use DaisyUI component classes for consistent UI
+4. Ensure accessibility compliance (enforced by Ultracite)
+5. Let Lefthook handle formatting on commit
+6. Use explicit type imports (`import type`) for TypeScript types
+7. Components should be functional with hooks, not class-based
